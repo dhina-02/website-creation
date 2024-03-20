@@ -430,7 +430,9 @@ select {
   width: auto;
   padding: 10px 20px;
   display: flex;
+  justify-content: center;
   justify-self: start;
+  text-align: center;
   background-color: var(--orange-color);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -542,7 +544,7 @@ select {
     justify-content: space-evenly;
     align-items: center;
   }
-  
+
   .head-line {
     height: 3px;
     width: 100%;
@@ -579,8 +581,8 @@ select {
     display: flex;
     justify-content: space-between;
   }
-  .user-details div{
-   width: 100%;
+  .user-details div {
+    width: 100%;
   }
   /*  */
   .about {
@@ -666,8 +668,8 @@ select {
     top: -700px;
     transition: 500ms ease position;
   }
-  .nav-show{
-  top: 0;
+  .nav-show {
+    top: 0;
   }
   .page-li {
     background-color: var(--green-color);
@@ -693,7 +695,12 @@ select {
   .nav-list ul li {
     padding: 10px 0px;
   }
-
+  .one {
+    top: 20%;
+  }
+  .two {
+    top: 20%;
+  }
   /* carousel  */
   .carousel-item {
     height: 80%;
@@ -713,6 +720,7 @@ select {
   }
   .features {
     height: auto;
+    padding: 0;
     margin-bottom: 70px;
   }
   .features-div {
@@ -769,13 +777,26 @@ select {
   /* form */
 
   /* testimonial */
+ .testimonials-list{
+  display: flex;
+  justify-content: center;
+ }
   .testimonials-div {
     flex-direction: column-reverse;
     align-items: center;
-    width: 250px;
+    justify-content: center;
+    width: 80%;
     height: auto;
     padding: 5px;
+    margin:0 auto
   }
+  #backBtnTwo {
+    font-size: 20px;
+  }
+  #nextBtnTwo {
+    font-size: 20px;
+  }
+
   /*  */
   .client-side {
     height: auto;
