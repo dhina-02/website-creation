@@ -1,13 +1,13 @@
 // Nav bar
 const openMenu = document.getElementById("open");
 const closeMenu = document.getElementById("close");
-const menu = document.querySelector(".nav-bar");
+const menu = document.querySelector(".nav-list");
 const listClose = document.querySelectorAll(".link-tab");
 
 // Function to toggle menu visibility
 function toggleMenu() {
   const screenWidth = window.innerWidth;
-  if (screenWidth <= 530) {
+  if (screenWidth <= 730) {
     if (menu.classList.contains("nav-show")) {
       openMenu.style.display = "none";
       closeMenu.style.display = "block";
@@ -25,7 +25,7 @@ toggleMenu();
 // Event listeners
 openMenu.addEventListener("click", () => {
   menu.classList.add("nav-show");
-  toggleMenu();
+  toggleMenu();f
 });
 
 closeMenu.addEventListener("click", () => {
