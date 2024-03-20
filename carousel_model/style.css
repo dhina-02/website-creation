@@ -1,0 +1,39 @@
+.carousel-container {
+  position: relative;
+  max-width: 800px; /* Adjust as per your requirement */
+  margin: 0 auto;
+}
+
+.carousel-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
