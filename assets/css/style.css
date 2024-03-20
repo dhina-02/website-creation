@@ -589,7 +589,7 @@ select {
     height: auto;
   }
   .about-content {
-    margin: 20px 0;
+    margin: 60px 0 30px 0;
   }
   .table-section {
     width: 80%;
@@ -597,7 +597,7 @@ select {
   .sub-about {
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 40px 0px;
   }
   .sub-about-content {
     width: 80%;
@@ -633,6 +633,9 @@ select {
     margin: 0 10px;
     font-size: 16px;
     padding: 8px;
+  }
+   .testimonials-content{
+    padding: 50px 0;
   }
   .testimonials-div-content p {
     text-align: justify;
@@ -701,19 +704,25 @@ select {
   .two {
     top: 20%;
   }
+  .head-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   /* carousel  */
   .carousel-item {
-    height: 80%;
+    height: 100%;
   }
   .carousel-container {
-    height: 80vh;
+    height: 100vh;
   }
   /* home */
 
   .home {
-    position: absolute;
-    top: 0;
-    height: auto;
+    height: 100%;
+  }
+  .title{
+    height: 80%;
   }
   .button {
     font-size: 20px;
@@ -721,9 +730,10 @@ select {
   .features {
     height: auto;
     padding: 0;
-    margin-bottom: 70px;
+    margin: 80px 0;
   }
   .features-div {
+    padding: 20px;
     width: 80%;
     height: auto;
   }
@@ -771,29 +781,44 @@ select {
   .service-card-btn button {
     width: 100%;
   }
+  /* table */
   .table-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    width:80%;
     font-size: 14px;
   }
+  .table-section table{
+    height: 50%;
+    width: 80%;
+  }
   /* form */
-
+.contact-form{
+  height: 580px;
+}
   /* testimonial */
  .testimonials-list{
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
  }
   .testimonials-div {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 95%;
     height: auto;
     padding: 5px;
     margin:0 auto
   }
   #backBtnTwo {
     font-size: 20px;
+    padding-left: 10px;
   }
   #nextBtnTwo {
+    padding-right: 10px;
     font-size: 20px;
   }
 
