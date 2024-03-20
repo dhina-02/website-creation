@@ -1,46 +1,47 @@
 // Nav bar
-
 const openMenu = document.getElementById("open");
 const closeMenu = document.getElementById("close");
 const menu = document.querySelector(".nav-bar");
 const listClose = document.querySelectorAll(".link-tab");
-const menu_icon = document.querySelector(".menu-icon");
 
-openMenu.addEventListener("click", () => console.log("hello"));
+// Function to toggle menu visibility
+function toggleMenu() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 530) {
+    if (menu.classList.contains("nav-show")) {
+      openMenu.style.display = "none";
+      closeMenu.style.display = "block";
+    } else {
+      openMenu.style.display = "block";
+      closeMenu.style.display = "none";
+    }
+  } else {
+    openMenu.style.display = "none";
+    closeMenu.style.display = "none";
+  }
+}
+toggleMenu();
 
+// Event listeners
 openMenu.addEventListener("click", () => {
-  openMenu.style.display = "none";
-  closeMenu.style.display = "block";
-  menu.style.display = "block";
+  menu.classList.add("nav-show");
+  toggleMenu();
 });
 
-function closeMenuFun() {
-
-  closeMenu.style.display = "none";
-  openMenu.style.display = "block";
-  menu.style.display = "none";
-}
-closeMenu.addEventListener("click", closeMenuFun);
+closeMenu.addEventListener("click", () => {
+  menu.classList.remove("nav-show");
+  toggleMenu();
+});
 
 listClose.forEach((listClose) => {
   listClose.addEventListener("click", function () {
-    closeMenuFun();
+    menu.classList.remove("nav-show");
+    toggleMenu();
   });
 });
-// let width = window.outerWidth;
-// window.addEventListener("resize", ()=>{
-//   if (width > 530) {
-//     console.log("kk")
-//     openMenu.style.display = "none";
-//   }
-//   else if(width<530){
-//     openMenu.style.display = "block";
-//   }
 
-// })
-
-
-
+// Listen for window resize event
+window.addEventListener("resize", toggleMenu);
 
 
 //home carousel
